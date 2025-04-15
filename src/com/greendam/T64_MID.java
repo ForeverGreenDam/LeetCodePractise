@@ -19,6 +19,7 @@ public class T64_MID {
             dp[i][0] = dp[i - 1][0] + grid[i][0];
         }
         for (int i = 1; i < grid[0].length; i++) {
+
             dp[0][i]=dp[0][i-1]+grid[0][i];
         }
         //递推公式：dp[x][y]=min(dp[x][y-1],dp[x-1][y])+grid[x][y];
