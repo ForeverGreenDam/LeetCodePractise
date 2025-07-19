@@ -23,6 +23,7 @@ public class T102_MID {
                list.add(poll.val);
             }
             res.add(list);
+            System.out.println("题号打错了");
         }
     return res;
     }
