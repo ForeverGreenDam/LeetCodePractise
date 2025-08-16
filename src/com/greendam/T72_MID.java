@@ -16,6 +16,7 @@ public class T72_MID {
         if(n==0){
             return m;
         }
+        //dp[i][j]的含义：word1[0~i]和word2[0,j]的最小编辑距离（这里的数字不是指数组索引，而是指字符串长度，从1开始计数，word[0]表示空字符串）
         int[][] dp=new int[m+1][n+1];
         for(int i=0;i<m+1;i++){
             dp[i][0]=i;
