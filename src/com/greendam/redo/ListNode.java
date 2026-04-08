@@ -8,4 +8,16 @@ public class ListNode {
           next = null;
       }
 
+      public static ListNode create(int[] nums) {
+          if (nums == null || nums.length == 0) {
+              return null;
+          }
+          ListNode dummy = new ListNode(0);
+          ListNode current = dummy;
+          for (int num : nums) {
+              current.next = new ListNode(num);
+              current = current.next;
+          }
+          return dummy.next;
+      }
 }
